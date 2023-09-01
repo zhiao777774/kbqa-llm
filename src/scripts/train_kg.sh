@@ -1,0 +1,13 @@
+CUDA_LAUNCH_BLOCKING=1  python src/train_kg.py \
+    --pickle_path src/data/KQAPro/kg/KQAPro_kb_triplets_index_mapped_py36.pkl \
+    --entity_json_path src/data/KQAPro/kg/KQAPro_kb_entities.json \
+    --relation_json_path src/data/KQAPro/kg/KQAPro_kb_relations.json \
+    --triplets_json_path src/data/KQAPro/kg/KQAPro_kb_triplets.json \
+    --model_dir src/checkpoints/KQAPro/ \
+    --seed 42 \
+    --batch_size 16 \
+    --model_name GTrans \
+    --n_layers_KG 4 \
+    --n_heads 1 \
+    --encoder_hdim_kg 512 \
+    -d 512

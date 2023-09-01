@@ -1,0 +1,10 @@
+Given a prompt, extrapolate as many relationships as possible from it and provide a list of updates.
+Use an entity linking approach and map every recognized entity to appropriate Wikidata id.
+[Example]
+prompt: Alice is Bob's roommate, and she is 23 years old.
+updates:
+[[("Alice", "Q42"), "roommate", ("Bob", "Q57")], [("Alice", "Q42"), "age", "23"]]
+
+[Question]
+prompt: {prompt}
+updates:

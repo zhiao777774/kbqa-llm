@@ -1,0 +1,3 @@
+The question is {question}
+Answer the question by using the provided information:
+{context}
